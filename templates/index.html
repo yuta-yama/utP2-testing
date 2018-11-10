@@ -29,8 +29,8 @@
         <!-- NAVIGATION LINKS -->
             <div class="btn-toolbar flex-grow-1 text-right" id="myNavbar">
             <ul class="navbar-nav ml-auto flex-nowrap">
-                    <button type="button" class="btn btn-secondary bt-sm ml-2">Explore</button>
-                    <button type="button" class="btn btn-secondary bt-sm ml-2">Trends</button>
+                    <button type="button" class="btn btn-secondary bt-sm ml-2" id="btn-explore">Explore</button>
+                    <button type="button" class="btn btn-secondary bt-sm ml-2" id="btn-trends">Trends</button>
             </ul>
             </div>
     </nav>
@@ -49,10 +49,10 @@
                     </div>
                     <div class="panel-body">
                         <div class="btn-group" role="group" aria-label="Basic example">
-                            <button type="button" class="btn btn-secondary" onclick="myFunction()">Houses</button>
-                            <button type="button" class="btn btn-secondary" onclick="myFunction()">Commute</button>
-                            <button type="button" class="btn btn-secondary" onclick="myFunction()">Crime</button>
-                            <button type="button" class="btn btn-secondary" onclick="myFunction()">School</button>
+                            <button type="button" class="btn btn-secondary" id="btn-house" onclick="myFunction()">Houses</button>
+                            <button type="button" class="btn btn-secondary" id="btn-commute" onclick="myFunction()">Commute</button>
+                            <button type="button" class="btn btn-secondary" id="btn-crime" onclick="myFunction()">Crime</button>
+                            <button type="button" class="btn btn-secondary" id="btn-school" onclick="myFunction()">School</button>
                         </div>
                     </div>
                 </div>
@@ -71,7 +71,6 @@
                         <h5 class="panel-title">Map Key </h5>
                     </div>
                     <div class="panel-body">
-                        
                     </div>
                 </div>
             </div>
