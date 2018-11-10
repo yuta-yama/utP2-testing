@@ -13,40 +13,26 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <!-- <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}"> -->
     <link rel="stylesheet" type="text/css" href="../static/css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Pacifica" rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Bitter|Merriweather|Roboto" rel="stylesheet">
 </head>
 
 <body>
   <div class="container">
 
     <!-- NAVBAR -->
-    <ul class="nav nav-pills">
-        <li class="nav-link active"><a href="#" id="pills">Explore</a></li>
-        <li><a href="#" class="nav-link" id="pills">Trends</a></li>
-    </ul>
-
-
     <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="#"><h3>EPIC Austin Housing Explorer</h3></a>
+        <a class="navbar-brand" href="#"><h4>EPIC Austin Housing Explorer</h4></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         
         <!-- NAVIGATION LINKS -->
-        
-            
-              
-
-        <div class="collapse navbar-collapse flex-grow-1 text-right" id="myNavbar">
+            <div class="btn-toolbar flex-grow-1 text-right" id="myNavbar">
             <ul class="navbar-nav ml-auto flex-nowrap">
-                <li class="nav-item">
-                    <a href="#" class="nav-link m-2 menu-item nav-active">Explore</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link m-2 menu-item">Trends</a>
-                </li>
+                    <button type="button" class="btn btn-secondary bt-sm ml-2">Explore</button>
+                    <button type="button" class="btn btn-secondary bt-sm ml-2">Trends</button>
             </ul>
-        </div>
+            </div>
     </nav>
     
     <!-- MAIN BODY -->
@@ -59,27 +45,33 @@
             <div id="filter-box">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <h5 class="panel-title">Filters</h5>
+                        <h5 class="panel-title">Filters </h5>
                     </div>
                     <div class="panel-body">
-                        <div class="btn-group-vertical" role="group" aria-label="Basic example">
-                            <button type="button" class="btn btn-secondary">Houses</button>
-                            <button type="button" class="btn btn-secondary">Commute</button>
-                            <button type="button" class="btn btn-secondary">Crime</button>
-                            <button type="button" class="btn btn-secondary">School</button>
+                        <div class="btn-group" role="group" aria-label="Basic example">
+                            <button type="button" class="btn btn-secondary" onclick="myFunction()">Houses</button>
+                            <button type="button" class="btn btn-secondary" onclick="myFunction()">Commute</button>
+                            <button type="button" class="btn btn-secondary" onclick="myFunction()">Crime</button>
+                            <button type="button" class="btn btn-secondary" onclick="myFunction()">School</button>
                         </div>
                     </div>
                 </div>
             </div>
 
+            <script>
+                function myFunction() {
+                  document.getElementById("mapbox").innerHTML = "";
+                }
+            </script>
+
             <!-- MAP KEY -->
             <div id="mapkey-box">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <h5 class="panel-title">Map Key</h5>
+                        <h5 class="panel-title">Map Key </h5>
                     </div>
                     <div class="panel-body">
-                        Map Key Goes Here
+                        
                     </div>
                 </div>
             </div>
@@ -88,22 +80,19 @@
             <div id="chart-box">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <h5 class="panel-title">Chart</h5>
+                        <h5 class="panel-title">Chart </h5>
                     </div>
                     <div class="panel-body">
-                        Chart Info Goes Here
+                        
                     </div>
                 </div>
             </div>
         </div>
 
-        
-       
-      
         <!-- MAP AREA -->
         <div class="col-lg-8 col-md-8 col-sm-10">
             <div class="mapbox">
-                
+                <h5 class="panel-title">Mapbox </h5>
             </div>
         </div>
       
