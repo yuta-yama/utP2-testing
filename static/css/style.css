@@ -1,6 +1,6 @@
 /* GENERAL STYLES */
 body {
-    background-color: #f9f9f9;
+    background-color: white;
     font-family: 'Roboto', sans-serif;
     /* font-family: 'Merriweather', serif; */
     /* font-family: 'Bitter', serif; */
@@ -28,6 +28,7 @@ body {
 
 #filter-box {
     margin-top: 10px;
+    margin-left: 15px;
     padding-top: 15px;
     padding-left: 15px;
     padding-bottom: 20px;
@@ -35,11 +36,13 @@ body {
     border-style: solid;
     border-color: #e5e5e5;
     border-width: 1px;
+    align-content: center;
 }
 
 #mapkey-box {
     background-color: white;
     margin-top: 10px;
+    margin-left: 15px;
     padding-top: 15px;
     padding-left: 15px;
     padding-bottom: 20px;
@@ -52,6 +55,7 @@ body {
 #chart-box {
     background-color: white;
     margin-top: 10px;
+    margin-left: 15px;
     padding-top: 15px;
     padding-left: 15px;
     padding-bottom: 20px;
@@ -63,6 +67,7 @@ body {
 
 .mapbox {
     margin-top: 10px;
+    margin-right: 15px;
     padding-top: 15px;
     padding-left: 15px;
     background-color: white;
