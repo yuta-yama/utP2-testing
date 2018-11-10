@@ -1,0 +1,48 @@
+/* GENERAL STYLES */
+/* body {
+    background-color: whitesmoke;
+} */
+
+/* NAVBAR */
+/* .navbar {
+    background-color: lightslategrey;
+} */
+
+#pills, a:link{
+    color: white;
+    text-decoration: none;
+}
+
+/* Main DIV Styles */
+
+#filter-box {
+    margin-top: 20px;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-bottom: 20px;
+    background-color: lightsalmon;
+}
+
+#mapkey-box {
+    background-color: lightblue;
+    margin-top: 10px;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-bottom: 20px;
+    height: 100px;
+}
+
+#chart-box {
+    background-color: lightgreen;
+    margin-top: 10px;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-bottom: 20px;
+    height: 325px;
+}
+
+.mapbox {
+    margin-top: 20px;
+    background-color: rgb(249, 187, 255);
+    height: 550px;
+}
