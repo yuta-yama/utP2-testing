@@ -9,13 +9,12 @@ body {
 #epic-title {
     color: black;
     padding-top: 30px;
-    padding-left: 15px;
+    padding-left: 35px;
     padding-bottom: 15px;
 }
 
 /* WHITE SIDE BAR AREA */
 .first {
-    height: 860px;
     background-color: #ddd;
     position: relative;
 }
@@ -35,8 +34,20 @@ body {
     background: url(https://gia.guim.co.uk/2013/05/alaska/responsive/img/4_screen.png) top left repeat-y;
 }
 
+.side-footer {
+    font-size: .7em;
+    padding-left: 15px;
+    position: absolute;
+    bottom: 15px;
+}
 
 /* NAVBAR */
+#nav-links {
+    align-content: center;
+    padding-left: 22px;
+    padding-right: 41px;
+    padding-bottom: 15px;
+}
 
 .container {
     margin-top: 5px;
@@ -95,16 +106,18 @@ body {
     border-width: 1px;
 }
 
-.mapbox {
+#mapbox {
     /* index */
-    margin-top: 10px;
-    margin-right: 15px;
     padding-top: 15px;
     padding-left: 15px;
+    padding-right: -30px;
     background-color: white;
-    height: 720px;
     border-style: solid;
     border-color: #e5e5e5;
     border-width: 1px;
-
+    margin-left: -15px;
+    height: 100vh;
+    width: 101vw;
+    z-index: 1;
+    position: relative;
 }
