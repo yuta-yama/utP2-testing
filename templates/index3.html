@@ -30,7 +30,7 @@
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    
+
     <!-- NAVIGATION LINKS -->
         <div class="btn-toolbar flex-grow-1 text-right">
         <ul class="navbar-nav ml-auto flex-nowrap" id="nav-links">
@@ -90,7 +90,7 @@
                 <h5 class="panel-title">Chart </h5>
             </div>
             <div class="panel-body">
-                
+
             </div>
         </div>
     </div>
@@ -100,10 +100,10 @@
 <script>
     // Get the container element
     var btnContainer = document.getElementById("filter-btns");
-    
+
     // Get all buttons with class="btn" inside the container
     var btns = btnContainer.getElementsByClassName("btn");
-    
+
     // Loop through the buttons and add the active class to the current/clicked button
     for (var i = 0; i < btns.length; i++) {
         btns[i].addEventListener("click", function() {
@@ -138,13 +138,11 @@
 <!-- CHART -->
 <script type="text/javascript" src="../static/js/temp.js"></script>
 
-<!-- LEAFLET -->
-<!-- API key -->
-<!-- <script type="text/javascript" src="../static/js/config.js"></script> -->
-<!-- JS -->
-<!-- <script type="text/javascript" src="../static/js/logic.js"></script> -->
-<script type="text/javascript" src="../static/js/tConfig.js"></script>
+<!-- LEAFLET CHOROPLETH-->
 <script type="text/javascript" src="../static/js/tChoropleth.js"></script>
+<!-- API key -->
+<script type="text/javascript" src="../static/js/tConfig.js"></script>
+<!-- JS -->
 <script type="text/javascript" src="../static/js/tLogic.js"></script>
 
 </html>
