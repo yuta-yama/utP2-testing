@@ -25,7 +25,8 @@ body {
 .white-screen {
     padding-right: 60px;
     height: 100%;
-    background: url(https://gia.guim.co.uk/2013/05/alaska/responsive/img/4_screen.png) top left repeat-y;
+    background: url("../../templates/images/white_alpha.png") top left repeat-y;
+    /* https://gia.guim.co.uk/2013/05/alaska/responsive/img/4_screen.png */
 }
 
 /* NAVBAR */
@@ -66,8 +67,8 @@ body {
 }
 
 #filter-box {
-    background-color: rgba(255, 255, 255,  .6);
-    margin-top: 25px;
+    background-color: rgba(255, 255, 255,  0);
+    margin-top: 5px;
     margin-left: 15px;
     padding-top: 15px;
     padding-left: 15px;
@@ -80,7 +81,7 @@ body {
 }
 
 #mapkey-box {
-    background-color: rgba(255, 255, 255,  .6);
+    background-color: rgba(255, 255, 255,  0);
     margin-top: 10px;
     margin-left: 15px;
     padding-top: 15px;
@@ -94,7 +95,7 @@ body {
 }
 
 #chart-box {
-    background-color: rgba(255, 255, 255,  .6);
+    background-color: rgba(255, 255, 255,  .1);
     margin-top: 10px;
     margin-left: 15px;
     padding-top: 15px;
@@ -111,7 +112,7 @@ body {
 
 #map {
     /* index */
-    padding-top: 15px;
+    padding-top: 0px;
     padding-left: 15px;
     padding-right: -30px;
     background-color: white;

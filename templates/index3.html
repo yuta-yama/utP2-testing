@@ -34,8 +34,8 @@
     <!-- NAVIGATION LINKS -->
         <div class="btn-toolbar flex-grow-1 text-right">
         <ul class="navbar-nav ml-auto flex-nowrap" id="nav-links">
-                <button type="button" class="btn btn-outline-secondary bt-lg ml-2 active" id="btn-explore">Explore</button>
-                <button type="button" class="btn btn-outline-secondary bt-lg ml-2" id="btn-trends">Trends</button>
+                <button type="button" class="btn btn-outline-primary bt-lg ml-2 active" id="btn-explore">Explore</button>
+                <button type="button" class="btn btn-outline-primary bt-lg ml-2" id="btn-trends">Trends</button>
         </ul>
         </div>
 </nav>
@@ -60,11 +60,13 @@
                 <h5 class="panel-title">Filters </h5>
             </div>
             <div class="panel-body">
-                <div class="btn-group" role="group" aria-label="Basic example">
-                    <button type="button" class="btn btn-outline-info active" id="btn-house" onclick="myFunction()">Houses</button>
-                    <button type="button" class="btn btn-outline-info" id="btn-commute" onclick="myFunction()">Commute</button>
-                    <button type="button" class="btn btn-outline-info" id="btn-crime" onclick="myFunction()">Crime</button>
-                    <button type="button" class="btn btn-outline-info" id="btn-school" onclick="myFunction()">School</button>
+                <div id="filter-btns">
+                    <!-- class="btn-group" role="group" -->
+                    <button class="btn btn-outline-primary" id="btn-house">Houses</button>
+                    <button class="btn btn-outline-primary" id="btn-commute">Commute</button>
+                    <button class="btn btn-outline-primary" id="btn-crime">Crime</button>
+                    <button class="btn btn-outline-primary" id="btn-school">School</button>
+                    <!-- onclick="myFunction()" -->
                 </div>
             </div>
         </div>
@@ -93,6 +95,25 @@
         </div>
     </div>
 </div>
+
+<!-- BUTTON Functionality -->
+<script>
+    // Get the container element
+    var btnContainer = document.getElementById("filter-btns");
+    
+    // Get all buttons with class="btn" inside the container
+    var btns = btnContainer.getElementsByClassName("btn");
+    
+    // Loop through the buttons and add the active class to the current/clicked button
+    for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function() {
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+      });
+    }
+</script>
+
 </body>
 
 <!-- FOOTER AREA -->
@@ -114,6 +135,10 @@
 <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 <script src="../static/js/app.js"></script>
 
+<!-- CHART -->
+<script type="text/javascript" src="../static/js/temp.js"></script>
+
+<!-- LEAFLET -->
 <!-- API key -->
 <script type="text/javascript" src="../static/js/config.js"></script>
 <!-- JS -->
