@@ -23,27 +23,35 @@
 
 <body>
 
+<!-- NAVBAR -->
+<div id="nav-box">
+<nav class="navbar navbar-expand-lg navbar-light" id="myNavbar">
+    <a class="navbar-brand mb-0" href="#"><h3>EPIC Austin Housing Explorer</h3></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <!-- NAVIGATION LINKS -->
+        <div class="btn-toolbar flex-grow-1 text-right">
+        <ul class="navbar-nav ml-auto flex-nowrap" id="nav-links">
+                <button type="button" class="btn btn-outline-secondary bt-lg ml-2 active" id="btn-explore">Explore</button>
+                <button type="button" class="btn btn-outline-secondary bt-lg ml-2" id="btn-trends">Trends</button>
+        </ul>
+        </div>
+</nav>
+</div>
+
 <!-- MAP BOX -->
-<div class="container-fluid first" id="mapbox">
+<div class="container-fluid first" id="map">
     <div class="row">
         <div class="col-lg-12 col-md-12 col-s-12 col-xs-12">
-            <!-- <div id="mapbox"></div>   -->
+            <!-- <div id="map"></div>   -->
         </div>
     </div>
 </div>
 
 <!-- SIDE BAR -->
-<div class="ontop container white-screen">
-    <!-- PROJECT TITLE -->
-    <div id="epic-title">
-        <h4>EPIC Austin Housing Explorer</h4>
-    </div>
-
-    <!-- NAVIGATION LINKS -->
-    <div id="nav-links">
-        <button type="button" class="btn btn-outline-info bt-lg ml-2 btn-block active" id="btn-explore">Explore</button>
-        <button type="button" class="btn btn-outline-info bt-lg ml-2 btn-block" id="btn-trends">Trends</button>
-    </div>
+<div class="ontop container white-screen" id="sidebar">
 
     <!-- FILTER PANEL -->
     <div id="filter-box">
@@ -84,12 +92,18 @@
             </div>
         </div>
     </div>
-
-    <!-- FOOTER SECTION IN SIDEBAR -->
-    <div class="side-footer">© 2018 ECONOMETRIC PROPERTY INFORMATION CODING TEAM</div>
 </div>
-
 </body>
+
+<!-- FOOTER AREA -->
+<!-- <footer>
+    {% include "footer.html" %}
+</footer> -->
+
+<footer class="page-footer font-small blue fixed-bottom">
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2018 ECONOMETRIC PROPERTY INFORMATION CODING TEAM</div>
+</footer>
 
 <!-- SCRIPTS AREA -->
     <!-- {% include "scripts.html" %}    -->
