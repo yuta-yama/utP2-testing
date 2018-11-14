@@ -6,19 +6,12 @@ body {
     /* font-family: 'Bitter', serif; */
 }
 
-#epic-title {
-    color: black;
-    padding-top: 30px;
-    padding-left: 15px;
-    padding-bottom: 15px;
-}
-
 /* WHITE SIDE BAR AREA */
 .first {
-    height: 860px;
     background-color: #ddd;
     position: relative;
 }
+
 .ontop {
     height: 700px;
     background-color: rgb(255, 191, 191);
@@ -32,11 +25,14 @@ body {
 .white-screen {
     padding-right: 60px;
     height: 100%;
-    background: url(https://gia.guim.co.uk/2013/05/alaska/responsive/img/4_screen.png) top left repeat-y;
+    background: url("../../templates/images/white_alpha.png") top left repeat-y;
+    /* https://gia.guim.co.uk/2013/05/alaska/responsive/img/4_screen.png */
 }
 
-
 /* NAVBAR */
+#nav-links {
+    /* padding-bottom: 10px; */
+}
 
 .container {
     margin-top: 5px;
@@ -47,28 +43,53 @@ body {
     text-decoration: none;
 }
 
-#myNavbar {
-    margin-top: 5px;
+#nav-box {
+    color: white;
+    /* background-color: steelblue; */
 }
 
-/* Main DIV Styles */
+#myNavbar {
+    /* margin-top: 5px; */
+    padding-top: 10px;
+    padding-left: 35px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #c1c1c1;
+    z-index: 3;
+    /* -webkit-box-shadow: 0px 3px 15px 0px rgba(0,0,0,0.5); */
+    box-shadow: 0px 3px 15px 0px rgba(0,0,0,0.5);
+    background-color: #1663c7;
+}
+
+#epic-title {
+    color: white;
+    margin-top: 5px;
+    padding-left: 0px;
+}
+
+/* SIDEBAR */
+
+#sidebar {
+    margin-top: 75px;
+    height: 100vh;
+}
 
 #filter-box {
-    margin-top: 10px;
+    background-color: rgba(255, 255, 255,  0);
+    margin-top: 5px;
     margin-left: 15px;
-    padding-top: 15px;
+    padding-top: 20px;
     padding-left: 15px;
     padding-bottom: 20px;
     width: 350px;
-    background-color: white;
-    border-style: solid;
+    /* border-style: solid;
     border-color: #e5e5e5;
-    border-width: 1px;
+    border-width: 1px; */
     align-content: center;
 }
 
 #mapkey-box {
-    background-color: white;
+    background-color: rgba(255, 255, 255,  0);
     margin-top: 10px;
     margin-left: 15px;
     padding-top: 15px;
@@ -76,13 +97,13 @@ body {
     padding-bottom: 20px;
     width: 350px;
     height: 100px;
-    border-style: solid;
+    /* border-style: solid;
     border-color: #e5e5e5;
-    border-width: 1px;
+    border-width: 1px; */
 }
 
 #chart-box {
-    background-color: white;
+    background-color: rgba(255, 255, 255,  .1);
     margin-top: 10px;
     margin-left: 15px;
     padding-top: 15px;
@@ -95,16 +116,28 @@ body {
     border-width: 1px;
 }
 
-.mapbox {
+/* MAP */
+
+#map {
     /* index */
-    margin-top: 10px;
-    margin-right: 15px;
-    padding-top: 15px;
+    padding-top: 0px;
     padding-left: 15px;
+    padding-right: -30px;
     background-color: white;
-    height: 720px;
     border-style: solid;
     border-color: #e5e5e5;
     border-width: 1px;
+    margin-left: -15px;
+    height: 100vh;
+    width: 101vw;
+    z-index: 1;
+    position: relative;
+}
 
+#footer-box {
+    background-color: #1663c7;
+    /* -webkit-box-shadow: 0px -3px 15px 0px rgba(0,0,0,0.5); */
+    box-shadow: 0px -2px 15px 0px rgba(0,0,0,0.5);
+    z-index: 3;
+    color: whitesmoke;;
 }
