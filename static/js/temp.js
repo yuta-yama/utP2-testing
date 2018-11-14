@@ -1,21 +1,20 @@
-document.getElementById("Save").addEventListener('click',function ()
-    {
-     alert("hello");
-     //validation code to see State field is mandatory.  
-    }  ); 
+function buildCharts() {
+    d3.json('/jsonifiedData/').then(successHandle).catch(errorHandle)
+    function errorHandle(error) {
+    console.log("Unable to retrieve data")
+    throw error
+    }  
 
-<button onclick='test()' >click</button>
-
-//
-<button onclick="myFunction()">Click me</button>
-
-<p id="demo"></p>
-
-<p>A function is triggered when the button is clicked. The function outputs some text in a p element with id="demo".</p>
-
-<script>
-function myFunction() {
-    document.getElementById("demo").innerHTML = "Hello World";
+    function successHandle(response) {
+    console.log(response)
+    response.forEach(function(data) {
+        data.alat = +data.alat;
+        data.alon = +data.alon;
+        data.address = data.address;
+        data.zipcode = +data.zipcode;
+        console.log(alat, alon, address, zipcode);
+    });   
+    }
 }
-</script>
-//
+
+buildCharts();

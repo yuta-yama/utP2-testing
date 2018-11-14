@@ -24,7 +24,7 @@
 <body>
 
 <!-- NAVBAR -->
-<div id="nav-box">
+<div id="nav-box" class=".bg-primary">
 <nav class="navbar navbar-expand-lg navbar-light" id="myNavbar">
     <a class="navbar-brand mb-0" href="#"><h3>EPIC Austin Housing Explorer</h3></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -62,7 +62,7 @@
             <div class="panel-body">
                 <div id="filter-btns">
                     <!-- class="btn-group" role="group" -->
-                    <button class="btn btn-outline-primary" id="btn-house">Houses</button>
+                    <button role="group" class="btn btn-outline-primary active" id="btn-house" onclick="cp(valuation)">Houses</button>
                     <button class="btn btn-outline-primary" id="btn-commute">Commute</button>
                     <button class="btn btn-outline-primary" id="btn-crime">Crime</button>
                     <button class="btn btn-outline-primary" id="btn-school">School</button>
@@ -107,7 +107,7 @@
     // Loop through the buttons and add the active class to the current/clicked button
     for (var i = 0; i < btns.length; i++) {
         btns[i].addEventListener("click", function() {
-        var current = document.getElementsByClassName("active");
+        var current = document.getElementById("filter-btns").getElementsByClassName("active");
         current[0].className = current[0].className.replace(" active", "");
         this.className += " active";
       });
@@ -140,8 +140,11 @@
 
 <!-- LEAFLET -->
 <!-- API key -->
-<script type="text/javascript" src="../static/js/config.js"></script>
+<!-- <script type="text/javascript" src="../static/js/config.js"></script> -->
 <!-- JS -->
-<script type="text/javascript" src="../static/js/logic.js"></script>
+<!-- <script type="text/javascript" src="../static/js/logic.js"></script> -->
+<script type="text/javascript" src="../static/js/tConfig.js"></script>
+<script type="text/javascript" src="../static/js/tChoropleth.js"></script>
+<script type="text/javascript" src="../static/js/tLogic.js"></script>
 
 </html>

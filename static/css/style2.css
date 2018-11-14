@@ -31,7 +31,7 @@ body {
 
 /* NAVBAR */
 #nav-links {
-    padding-bottom: 10px;
+    /* padding-bottom: 10px; */
 }
 
 .container {
@@ -44,17 +44,20 @@ body {
 }
 
 #nav-box {
-    /* -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
-    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75); */
+    
+    /* background-color: steelblue; */
 }
 
 #myNavbar {
-    margin-top: 5px;
+    /* margin-top: 5px; */
+    padding-top: 10px;
     padding-left: 35px;
     padding-right: 30px;
     border-bottom: 1px solid #c1c1c1;
     z-index: 3;
+    -webkit-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.5);
+    box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.5);
 }
 
 
@@ -62,7 +65,7 @@ body {
 /* SIDEBAR */
 
 #sidebar {
-    margin-top: 78px;
+    margin-top: 75px;
     height: 100vh;
 }
 
@@ -70,7 +73,7 @@ body {
     background-color: rgba(255, 255, 255,  0);
     margin-top: 5px;
     margin-left: 15px;
-    padding-top: 15px;
+    padding-top: 20px;
     padding-left: 15px;
     padding-bottom: 20px;
     width: 350px;
