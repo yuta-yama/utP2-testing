@@ -76,7 +76,7 @@ body {
 
 #filter-box {
     background-color: rgba(255, 255, 255,  0);
-    margin-top: 5px;
+    margin-top: 10px;
     margin-left: 15px;
     padding-top: 20px;
     padding-left: 15px;
@@ -140,4 +140,5 @@ body {
     box-shadow: 0px -2px 15px 0px rgba(0,0,0,0.5);
     z-index: 3;
     color: whitesmoke;;
+    font-size: .9em;
 }
